@@ -1,0 +1,232 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #ff6347;
+    padding: 20px;
+    color: white;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo h1 {
+    font-size: 1.8rem;
+}
+
+header .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header .nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero-section {
+    background-image: url('https://www.hdwallpapersfreedownload.com/uploads/large/fruits/gorgeous-mix-fresh-fruits-hd.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 100px 20px;
+    color: white;
+}
+
+.hero-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+.hero-section button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hero-section button:hover {
+    background-color: #e55337;
+}
+
+/* About Section */
+.about-section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.about-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Products Section */
+.products-section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.products-section h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+}
+
+.product-card h3 {
+    padding: 10px;
+    background-color: #ff6347;
+    color: white;
+}
+
+.product-card p {
+    padding: 10px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.contact-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+    gap: 15px;
+}
+
+.contact-section label {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.contact-section input,
+.contact-section textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-section button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: center;
+}
+
+.contact-section button:hover {
+    background-color: #e55337;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .product-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-card {
+        width: 80%;
+    }
+
+    .contact-section input,
+    .contact-section textarea {
+        width: 100%;
+    }
+}
